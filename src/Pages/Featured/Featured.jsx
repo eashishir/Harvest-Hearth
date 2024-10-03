@@ -5,12 +5,12 @@ import './Featured.css'
 
 const Featured = () => {
     return (
-        <div className="featured-item text-white pt-8 my-20">
+        <div className="featured-item bg-fixed text-white pt-8 my-20">
             <SectionTitle 
             subHeading='check it out'
             heading='Featured Item'
             ></SectionTitle>
-            <div className="md:flex justify-center items-center pt-12 px-36 py-20">
+            <div className="md:flex justify-center items-center bg-slate-500 bg-opacity-60 pt-12 px-36 py-20">
                 <div>
                     <img src={featuredImg} alt="" />
                 </div>
@@ -20,7 +20,7 @@ const Featured = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatum, 
                         maxime doloremque, suscipit nulla minima accusamus commodi error atque fugiat vitae! At, 
                         cumque facilis nisi minima voluptatibus ea quibusdam aspernatur!</p>
-                        <button className="btn btn-outline">Order Now</button>
+                        <button className="btn btn-outline border-0 border-b-4 mt-4">Order Now</button>
                 </div>
             </div>
         </div>
