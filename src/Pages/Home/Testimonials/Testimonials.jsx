@@ -8,6 +8,10 @@ import 'swiper/css/navigation';
 import { useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import '@smastrom/react-rating/style.css'
+// motion
+import {motion} from 'framer-motion';
+// variants
+import {fadeIn} from '../../../variants'
 
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
@@ -19,7 +23,12 @@ const Testimonials = () => {
     }, [])
 
     return (
-        <section className="my-20">
+        <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial= "hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount: 0.7}}
+         className="my-20">
             <SectionTitle
                 subHeading='What Our Client Say'
                 heading="Testimonials"
@@ -46,7 +55,7 @@ const Testimonials = () => {
                 }
             </Swiper>
 
-        </section>
+        </motion.div>
     );
 };
 

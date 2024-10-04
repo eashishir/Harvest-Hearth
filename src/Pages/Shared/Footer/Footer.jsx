@@ -1,8 +1,18 @@
+// motion
+import {motion} from 'framer-motion';
+// variants
+import {fadeIn} from '../../../variants'
+
 const Footer = () => {
     return (
         <footer>
-            <div className="footer bg-neutral text-neutral-content p-10">
-                <aside>
+            <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial= "hidden"
+            whileInView={"show"}
+            viewport={{once:false, amount: 0.7}}
+             className="footer bg-neutral text-neutral-content p-10">
+                <aside >
                     <svg
                         width="50"
                         height="50"
@@ -58,7 +68,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </nav>
-            </div>
+            </motion.div>
             <div className="footer footer-center bg-base-300 text-base-content p-4">
                 <aside>
                     <p>Copyright © {(new Date().getFullYear() )} - All right reserved by ACME Industries Ltd</p>

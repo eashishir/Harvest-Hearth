@@ -6,11 +6,12 @@ import HarvestHearth from "../HarvestHearth/HarvestHearth";
 import PopularMenu from "../PopularMenu/PopularMenu";
 import Recommends from "../Recommends/Recommends";
 import Testimonials from "../Testimonials/Testimonials";
+import './Home.css'
 
 
 const Home = () => {
     return (
-       <div>
+       <div >
          <Banner></Banner>
          <Category></Category>
          <HarvestHearth></HarvestHearth>
