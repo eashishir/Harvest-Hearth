@@ -1,7 +1,8 @@
-import Featured from "../../Featured/Featured";
+
 import Banner from "../Banner/Banner";
 import CallUs from "../CallUs/CallUs";
 import Category from "../Category/Category";
+import Featured from "../Featured/Featured";
 import HarvestHearth from "../HarvestHearth/HarvestHearth";
 import PopularMenu from "../PopularMenu/PopularMenu";
 import Recommends from "../Recommends/Recommends";
