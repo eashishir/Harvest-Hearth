@@ -13,22 +13,22 @@ import './Home.css'
 
 const Home = () => {
     return (
-       <div >
-        <Helmet>
-        <Helmet>
-            <title>Harvest&Hearth| Menu</title>
-           </Helmet>
-        </Helmet>
-         <Banner></Banner>
-         <Category></Category>
-         <HarvestHearth></HarvestHearth>
-         <PopularMenu></PopularMenu>
-         <CallUs></CallUs>
-         <Recommends></Recommends>
-         <Featured></Featured>
-         <Testimonials></Testimonials>
-       </div>
-        
+        <div >
+            <Helmet>
+
+                <title>Harvest&Hearth| Menu</title>
+            </Helmet>
+
+            <Banner></Banner>
+            <Category></Category>
+            <HarvestHearth></HarvestHearth>
+            <PopularMenu></PopularMenu>
+            <CallUs></CallUs>
+            <Recommends></Recommends>
+            <Featured></Featured>
+            <Testimonials></Testimonials>
+        </div>
+
     );
 };
 
