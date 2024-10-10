@@ -9,12 +9,7 @@ const Menu = () => {
             <title>Harvest&Hearth| Menu</title>
            </Helmet>
            <Cover img={menuImg}title="our menu" ></Cover>
-           <PopularMenu></PopularMenu>
-           <Cover img={menuImg}title="our menu" ></Cover>
-           <PopularMenu></PopularMenu>
-           <Cover img={menuImg}title="our menu" ></Cover>
-           <PopularMenu></PopularMenu>
-
+           
         </div>
     );
 };
