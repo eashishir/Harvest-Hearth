@@ -4,11 +4,18 @@ import Cover from '../../Shared/Cover/Cover';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import useMenu from '../../../hooks/useMenu';
-// import FoodCard from '../../../Components/FoodCard/FoodCard';
+
 import OrderTab from '../OrderTab/OrderTab';
-// import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+
 
 const Order = () => {
+    const categories = ['salad', 'pizza', 'dessert', 'soup', 'drinks'];
+    const {category} = useParams();
+    const initialIndex =  categories.indexOf(category);
+
+
     const [menu] = useMenu();
 
 
@@ -21,11 +28,14 @@ const Order = () => {
 
 
 
-    const [tabIndex, setTabIndex] = useState(0);
+    const [tabIndex, setTabIndex] = useState(initialIndex);
     return (
         <div>
+             <Helmet>
+            <title>Harvest&Hearth| Order Food</title>
+           </Helmet>
             <Cover img={OrderImg} title='Order Food'></Cover>
-            <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+            <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
                     <Tab>Salad</Tab>
                     <Tab>Pizza</Tab>
