@@ -1,6 +1,6 @@
 
 
-const FoodCard = ({item}) => {
+const  FoodCard = ({item}) => {
     const {image, price, recipe, name} = item;
     return (
    

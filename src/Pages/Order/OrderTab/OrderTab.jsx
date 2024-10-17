@@ -7,7 +7,7 @@ const OrderTab = ({items}) => {
         {
             items.map(item => <FoodCard
             key={item._id}
-            item={item}
+            item= {item}
             ></FoodCard>)
         }
         </div>
