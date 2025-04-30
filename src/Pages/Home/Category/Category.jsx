@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-import slide1 from "../../../assets/home/slide1.jpg"
-import slide2 from "../../../assets/home/slide2.jpg"
-import slide3 from "../../../assets/home/slide3.jpg"
-import slide4 from "../../../assets/home/slide4.jpg"
-import slide5 from "../../../assets/home/slide5.jpg"
+import slide1 from "../../../assets/home/basmati-rice-recipe.jpg"
+import slide2 from "../../../assets/home/vorta new.jpg"
+import slide3 from "../../../assets/home/chicken.jpg"
+import slide4 from "../../../assets/home/shorshe-ilish.jpg"
+import slide5 from "../../../assets/home/beef new.jpg"
 // motion
 import {motion} from 'framer-motion';
 // variants
@@ -43,22 +43,22 @@ const Category = () => {
             >
                 <SwiperSlide>
                     <img src={slide1} alt='' />
-                    <h3 className='text-3xl uppercase text-center -mt-24 text-white' >salad</h3>
+                    <h3 className='text-3xl uppercase text-center -mt-24 text-white' >Rice</h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide2} alt='' />
-                    <h3 className='text-3xl uppercase text-center -mt-24 text-white' >pizza</h3>
+                    <h3 className='text-3xl uppercase text-center -mt-24 text-white' >Bharta</h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide3} alt='' />
-                    <h3 className='text-3xl uppercase text-center -mt-24 text-white' >soups</h3>
+                    <h3 className='text-3xl uppercase text-center -mt-24 text-white' >Chicken</h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide4} alt='' />
-                    <h3 className='text-3xl uppercase text-center -mt-24 text-white' >dessert</h3>
+                    <h3 className='text-3xl uppercase text-center -mt-24 text-white' >Fish</h3>
                 </SwiperSlide>
                 <SwiperSlide><img src={slide5} alt='' />
-                    <h3 className='text-3xl uppercase text-center -mt-24 text-white' >salad</h3>
+                    <h3 className='text-3xl uppercase text-center -mt-24 text-white' >Beef</h3>
                 </SwiperSlide>
 
             </Swiper>

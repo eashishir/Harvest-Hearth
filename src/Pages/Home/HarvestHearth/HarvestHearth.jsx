@@ -20,9 +20,7 @@ const HarvestHearth = () => {
                     
                         <BgCard
                             Title='HarvestHeart'
-                            Description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatum, 
-                        maxime doloremque, suscipit nulla minima accusamus commodi error atque fugiat vitae! At, 
-                        cumque facilis nisi minima voluptatibus ea quibusdam aspernatur!'
+                            Description='At Harvest and Hearth, every meal is a celebration of home. We believe that homemade food carries the warmth, love, and care you can not find anywhere else. From fresh ingredients to soulful recipes, we serve comfort on every plate'
                         ></BgCard>
                    
                 </div>
