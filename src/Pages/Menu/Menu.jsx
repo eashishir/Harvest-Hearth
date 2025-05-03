@@ -1,20 +1,20 @@
 import { Helmet} from 'react-helmet-async';
 import Cover from '../Shared/Cover/Cover';
-import menuImg from "../../../src/assets/menu/banner3.jpg"
-import pizzaImg from "../../../src/assets/menu/pizza-bg.jpg"
-import saladImg from "../../../src/assets/menu/salad-bg.jpg"
-import soupImg from "../../../src/assets/menu/soup-bg.jpg"
-import dessertImg from "../../../src/assets/menu/dessert-bg.jpeg"
+import menuImg from "../../../src/assets/home/ramadan-celebration-with-delicious-food (1)-min.jpg"
+import chickenImg from "../../../src/assets/home/chicken.jpg"
+import vortaImg from "../../../src/assets/home/vorta new.jpg"
+import riceImg from "../../../src/assets/home/basmati-rice-recipe.jpg"
+import fishImg from "../../../src/assets/home/shorshe-ilish.jpg"
 import useMenu from '../../hooks/useMenu';
 import SectionTitle from '../../Components/SectionTitle/SectionTitle';
 import MenuCategory from './MenuCategory/MenuCategory';
 
 const Menu = () => {
     const [menu] = useMenu();
-    const desserts = menu.filter(item => item.category === 'dessert')
-    const salads = menu.filter(item => item.category === 'salad')
-    const pizzas = menu.filter(item => item.category === 'pizza')
-    const soups = menu.filter(item => item.category === 'soup')
+    const chicken = menu.filter(item => item.category === 'chicken')
+    const rice = menu.filter(item => item.category === 'rice')
+    const vorta = menu.filter(item => item.category === 'vorta')
+    const fish = menu.filter(item => item.category === 'fish')
     const offereds = menu.filter(item => item.category === 'offered')
 
     return (
@@ -36,30 +36,30 @@ const Menu = () => {
              {/* dessert menu items*/}
 
          <MenuCategory
-         items={desserts}
-         title="Dessert"
-         img={dessertImg}
+         items={fish}
+         title="Fish"
+         img={fishImg}
          ></MenuCategory>
          {/* pizza menu items */}
 
          <MenuCategory 
-         items={pizzas}
-         title="Pizza"
-         img={pizzaImg}
+         items={chicken}
+         title="Chicken"
+         img={chickenImg}
          ></MenuCategory>
          {/* salad menu items */}
 
          <MenuCategory 
-         items={salads}
-         title="Salad"
-         img={saladImg}
+         items={vorta}
+         title="Vorta"
+         img={vortaImg}
          ></MenuCategory>
          {/* soup menu items */}
 
          <MenuCategory 
-         items={soups}
-         title="Soup"
-         img={soupImg}
+         items={rice}
+         title="Rice"
+         img={riceImg}
          ></MenuCategory>
 
            

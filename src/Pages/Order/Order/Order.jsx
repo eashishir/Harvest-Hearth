@@ -20,10 +20,10 @@ const Order = () => {
 
 
 
-    const desserts = menu.filter(item => item.category === 'dessert')
-    const salads = menu.filter(item => item.category === 'salad')
-    const pizzas = menu.filter(item => item.category === 'pizza')
-    const soups = menu.filter(item => item.category === 'soup')
+    const chicken = menu.filter(item => item.category === 'chicken')
+    const rice = menu.filter(item => item.category === 'rice')
+    const vorta = menu.filter(item => item.category === 'vorta')
+    const fish = menu.filter(item => item.category === 'fish')
     const drinks = menu.filter(item => item.category === 'drinks')
 
 
@@ -37,24 +37,24 @@ const Order = () => {
             <Cover img={OrderImg} title='Order Food'></Cover>
             <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
-                    <Tab>Salad</Tab>
-                    <Tab>Pizza</Tab>
-                    <Tab>Soup</Tab>
-                    <Tab>Dessert</Tab>
+                    <Tab>Chicken</Tab>
+                    <Tab>Rice</Tab>
+                    <Tab>vorta</Tab>
+                    <Tab>Fish</Tab>
                     <Tab>Drinks</Tab>
                     
                 </TabList>
                 <TabPanel>
-                   <OrderTab items={salads} ></OrderTab>
+                   <OrderTab items={chicken} ></OrderTab>
                 </TabPanel>
                 <TabPanel>
-                    <OrderTab items={pizzas}></OrderTab>
+                    <OrderTab items={rice}></OrderTab>
                 </TabPanel>
                 <TabPanel>
-                <OrderTab items={soups}></OrderTab>
+                <OrderTab items={vorta}></OrderTab>
                 </TabPanel>
                 <TabPanel>
-                <OrderTab items={desserts}></OrderTab>
+                <OrderTab items={fish}></OrderTab>
                 </TabPanel>
                 <TabPanel>
                 <OrderTab items={drinks}></OrderTab>
